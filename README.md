@@ -1,2 +1,23 @@
 Project for work 
 Site Api system for cats
+
+docker build -t django-app .
+
+For start docker container 
+
+docker run -p 8000:8000 django-app
+ 
+For start project
+
+For createsuperuser:
+First:
+docker run -it --rm django-app bash
+Second:
+python manage.py createsuperuser
+
+You will be asked to enter the following information:
+
+Username: Superuser name
+Email address: Superuser email address
+Password: Superuser password
+Password (again): Enter the password again
